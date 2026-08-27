@@ -3,7 +3,11 @@ from sqlalchemy import engine_from_config, pool
 from alembic import context
 
 from app.database import Base
-from app.models.user import User  # import every model here
+from app.models import (        # this imports everything via __init__.py
+    User, Country, HSCode, DutyRate,
+    Product, Shipment, ShipmentItem,
+    Document, FreightRate, ExchangeRate
+)
 from app.config import get_settings
 
 settings = get_settings()
