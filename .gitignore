@@ -30,3 +30,5 @@ Thumbs.db
 # Database
 *.db
 *.sqlite3
+
+backend/app/ml/models/*.joblib
