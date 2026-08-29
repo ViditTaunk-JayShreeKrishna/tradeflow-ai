@@ -17,13 +17,13 @@ export default function Dashboard() {
   }
 
   const features = [
-    { name: 'HS Classifier', description: 'AI-powered HS code prediction', href: '/hs-classifier', ready: true },
-    { name: 'Landed Cost', description: 'Full cost breakdown', href: '#', ready: false },
-    { name: 'Documents', description: 'Generate trade docs', href: '#', ready: false },
-    { name: 'Compliance', description: 'Check trade rules', href: '#', ready: false },
-    { name: 'Analytics', description: 'Trade flow insights', href: '#', ready: false },
-    { name: 'Freight Rates', description: 'Live shipping rates', href: '#', ready: false },
-  ]
+  { name: 'HS Classifier',     description: 'AI-powered HS code prediction',  href: '/hs-classifier', ready: true },
+  { name: 'Landed Cost',       description: 'Full import cost breakdown',       href: '/landed-cost',   ready: true },
+  { name: 'Documents',         description: 'Generate trade documents',         href: '#',              ready: false },
+  { name: 'Compliance',        description: 'Check trade rules & restrictions', href: '#',              ready: false },
+  { name: 'Analytics',         description: 'Trade flow insights',              href: '#',              ready: false },
+  { name: 'Freight Rates',     description: 'Live shipping rates',              href: '#',              ready: false },
+]
 
   return (
     <div className="min-h-screen bg-dark-300 p-8">
