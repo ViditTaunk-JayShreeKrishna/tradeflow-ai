@@ -5,6 +5,7 @@ from app.routers import auth
 from app.routers import hs_classifier
 from app.routers import landed_cost
 from app.routers import countries
+from app.routers import tasks
 
 settings = get_settings()
 
@@ -31,6 +32,7 @@ app.include_router(auth.router)
 app.include_router(hs_classifier.router)
 app.include_router(landed_cost.router)
 app.include_router(countries.router)
+app.include_router(tasks.router)
 
 
 @app.get("/", tags=["Root"])

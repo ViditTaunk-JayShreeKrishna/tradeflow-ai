@@ -4,6 +4,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import HSClassifier from './pages/HSClassifier'
 import LandedCost from './pages/LandedCost'
+import DataPipeline from './pages/DataPipeline'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/hs-classifier" element={<HSClassifier />} />
         <Route path="/landed-cost" element={<LandedCost />} />
+        <Route path="/data-pipeline" element={<DataPipeline />} />
       </Routes>
     </BrowserRouter>
   )
