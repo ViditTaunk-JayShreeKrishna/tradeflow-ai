@@ -32,3 +32,12 @@ Thumbs.db
 *.sqlite3
 
 backend/app/ml/models/*.joblib
+
+# Test
+.pytest_cache/
+backend/.pytest_cache/
+backend/htmlcov/
+backend/.coverage
+
+# Nginx logs
+nginx/logs/
